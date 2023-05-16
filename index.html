@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container-one">
+    <div class="title">
+      <div class="s">S</div>
+      <div class="k">K</div>
+      <div class="e">E</div>
+      <div class="t">T</div>
+      <div class="c">C</div>
+      <div class="h">H</div>
+    </div>
+    <div class="content">
+      <button onclick="changeColor('black')">Black-Ink</button>
+      <button onclick="changeColor('random')">Rainbow-Ink</button>
+      <button onclick="changeColor('white')">Eraser</button>
+      <button onclick="resetBoard()">Clear</button>
+    </div>
+  </div>
+  <div class="board-container">
+    <div class="board"></div>
+  </div>
+  <div class="container-two">
+    <input
+      type="text"
+      placeholder="Size of Board"
+      value="16"
+      onchange="changeSize(this.value)">
+    <button class="input">Set Size</button>
+  </div>
+</body>
+</html>
